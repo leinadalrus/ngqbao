@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './dashboard.component.scss'
 })
 export class DashboardComponent {
+  isMemberAuthorised = true // TODO(Input): get input with @Input
 
+  getMemberAuthority() {
+    return this.isMemberAuthorised
+  }
 }
